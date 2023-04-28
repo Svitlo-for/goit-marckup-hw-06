@@ -388,6 +388,9 @@ img {
     color: var(--accent-txt-color); 
     margin-bottom: 16px;
 }
+.social-media-container {
+    margin-right: 80px;
+}
 .social-media {
     display: flex;
     justify-content: flex-start;
@@ -408,6 +411,12 @@ img {
 .social-media-link:hover,
 .social-media-link:focus {
     background-color: var(--succes-messages-color)
+}
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 /* portfolio */
