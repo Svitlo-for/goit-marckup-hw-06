@@ -66,7 +66,7 @@
                     </svg>
                 </button>
                 <strong class="modal-title">Leave your contacts and we will call you back</strong>
-                <form name="contacts_form">
+                <form class="contacts-form" name="contacts_form">
                     <label class="modal-form-label" for="user_name">
                         Name
                     <div class="modal-form-area">
@@ -96,11 +96,15 @@
                     </label>
                     <label class="modal-form-label" for="user_accept">Comment</label>
                     <textarea class="modal-comment-area" name="comment_area" rows="5" placeholder="Text input"></textarea>
-                    <label for="user_accept">
+                    <label class="user-accept" for="user_accept">
                         <input class="modal-form-checkbox" type="checkbox" name="user_accept" id="user_accept">
-                        <span>I accept the terms and conditions of the <a class="modal-form-accept-link" href="">Privacy Policy</a></span>
+                        <svg class="modal-form-accept-icon" width="16" height="16">
+                            <use class="modal-form-accept-unchecked" href="./images/icons.svg#icon-unchecked"></use>
+                            <use class="modal-form-accept-checked" href="./images/icons.svg#icon-checked"></use>
+                        </svg>
+                        <span class="modal-form-accept-text">I accept the terms and conditions of the <a class="modal-form-accept-link" href="">Privacy Policy</a></span>
                     </label>
-                    <button class="button" type="submit">Send</button>
+                    <button class="modal-form-button button" type="submit">Send</button>
                 </form>
             </div>
 
@@ -537,10 +541,15 @@
                 <p class="footer-title">Subscribe</p>
                 <div class="footer-form">
                     <form class="footer-subscribe-form" name="footer_subscribe_form">
-                        <label for="user-email"></label>
-                        <input type="email" name="email" id="user-email" placeholder="E-mail">
+
+                        <input class="footer-form-input" type="email" name="email" id="user_footert_email" placeholder="E-mail" required minlength="2">
+                    
+                        <button class="footer-form-button button" type="submit">Subscribe
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </button>
                     </form>
-                    <button class="button" type="submit">Subscribe</button>
                 </div>
             </div>
 
