@@ -412,10 +412,7 @@ img {
 .social-media-link:focus {
     background-color: var(--succes-messages-color)
 }
-.footer-form {
-    display: flex;
 
-}
 .footer-subscribe-form {
     display: flex;
     justify-content: center;
@@ -448,6 +445,8 @@ img {
     align-items: center;
     gap: 16px;
     margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
     background-color: var(--primary-brand-color);
 }
@@ -577,12 +576,12 @@ img {
 .modal {
     position: absolute;
     width: 408px;
-    height: 576px;
+    height: 584px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: var(--indent);
+    padding: 72px 24px 24px 24px;
 
     background-color: var(--modal-bg-color);
     border-radius: 4px;
@@ -591,7 +590,9 @@ img {
 
 .modal-button {
     display: block;
-    margin-left: auto;
+    position: absolute;
+    top: 24px;
+    right: 24px;
 
     width: var(--indent);
     height: var(--indent);
@@ -621,7 +622,7 @@ img {
 .modal-title {
     display: block;
     text-align: center;
-    margin-top: var(--indent);
+
     margin-bottom: 16px;
     color: var(--main-txt-color);
 }
@@ -686,6 +687,7 @@ img {
 
     width: 100%;
     min-height: 120px;
+    max-height: 176px;
     padding-top: 8px;
     padding-left: 16px;
     margin-bottom: 16px;
